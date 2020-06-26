@@ -333,10 +333,21 @@ button#chatButton svg {
     .iris-content p {
         margin-top: 16px;
         text-align: center;
-        font-size: 16px;
+        font-size: 18px;
         width: 400px;
         color: #ffffff;
     }
+
+    .iris-content p strong{
+        display: block;
+        margin-top: 16px;
+        text-align: center;
+        font-size: 22px;
+        margin-bottom: 8px;
+        width: 400px;
+        color: #ffffff;
+    }
+
     .iris-content span.iris {
         color: #5e468e;
     }
