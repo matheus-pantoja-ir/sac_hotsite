@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+html, body, main {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: content-box;
+}
+
+h1, nav {
+    display: inline-flex;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background: #F7F7FA;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.list-unstyled {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header {
+    border-bottom: 2px solid #008BD2;
+    width: 100%;
+}
+
+header .container {
+    height: 96px;
+    display: flex;
+    align-items: center;
+}
+
+header .container .brand {
+    margin-left: 15px;
+}
+
+.icon {
+    height: 48px;
+    width: 48px;
+    margin: 4px;
+}
+
+.center {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+a:visited, a:link {
+    text-decoration: none;
+    color: #005890;
+}
+
+footer {
+    background: #232222;
+    width: 100%;
+    padding: 0 0 32px 0;
+}
+
+footer .container .footer-content {
+    font-size: 14px;
+    color: #a6a6a6;
+    font-weight: bold;
+    padding: 42px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container .footer-content .logo-container {
+    margin: 0 15px;
+    align-self: flex-start;
+}
+
+.footer-content .group-list {
+    margin-top: 16px;
+}
+
+.legal-content {
+    color: #FFFFFF;
+    padding: 0 16px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.legal-content .corp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px 0 32px 0;
+}
+
+.corp ul {
+    margin-top: 8px;
+}
+
+.footer-content li a:visited, .footer-content li a:link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer-content li a:active, .footer-content li a:hover, .footer-content li a:focus {
+    color: #5067ed;
+}
+
+.container .footer-content li {
+    color: #ffffff;
+    margin: 12px 0;
+    font-size: 12px;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+}
+
+.horizontal_list {
+    display: flex;
+}
+
+.horizontal_list.app_market li:first-child {
+    margin-right: 24px;
+}
+
+.horizontal_list.social_list li {
+    margin-right: 20px;
+}
+
+.white {
+    border-bottom: #FFFFFF 1px solid;
+}
+
+main {
+    height: 100%;
+    margin: 0;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#chat {
+    display: none;
+    border: none;
+}
+
+#chat[open] {
+    position: fixed;
+    overflow-y: hidden;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#chat iframe {
+    height: 100%;
+    width: 100%;
+}
+
+.avatar-container {
+    display: flex;
+    justify-content: center;
+}
+
+.iris-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 8px;
+}
+
+.iris-content span {
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.iris-content span.iris {
+    color: #5e468e;
+}
+
+.iris-content .avatar {
+    width: 100%;
+    align-self: flex-end;
+}
+
+.frame .button-container {
+    display: flex;
+    justify-content: flex-end;
+    background: linear-gradient(356.46deg, rgb(83, 105, 229) -4.26%, rgb(96, 101, 241) 102.04%);
+}
+
+.frame button {
+    border: none;
+    background: none;
+    margin: 0 8px;
+}
+
+.frame button span {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+button#chatButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding: 8px;
+    border: none;
+    border-radius: 16px;
+    background: #328bd2;
+    color: #ffffff;
+}
+
+button#chatButton svg {
+    margin-right: 8px;
+    fill: #ffffff;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+    header .container .brand {
+        margin-left: 0;
+    }
+    footer .container .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: unset;
+        text-align: left;
+    }
+    .container .footer-content li {
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+    .legal-content {
+        text-align: left;
+    }
+    .legal-content .corp {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .corp ul {
+        margin-top: 0;
+    }
+    #chat[open] {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        width: 40%;
+        top: 98px;
+    }
+    main {
+        height: calc(100vh - 535px);
+        background: url('../img/iris_bg.jpg');
+        background-position: 70% center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .iris-content .avatar {
+        display: none;
+    }
+    .iris-content span {
+        margin-top: 16px;
+        text-align: center;
+        font-size: 26px;
+        width: 400px;
+        color: #ffffff;
+    }
+    .iris-content span.iris {
+        color: #5e468e;
+    }
+    button#chatButton {
+        margin-bottom: 16px;
+        width: 300px;
+        align-self: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}

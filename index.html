@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>IRIS - Ingresso Rápido</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#main_content" accesskey="0" class="sr-only text-white">conteudo principal</a>
+                    </li>
+
+                    <li class="brand">
+                        <a href="https://ingressorapido.com.br">
+                            <img src="assets/img/logo.svg" alt="logomarca ingresso rapido">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="avatar-container">
+            <div class="iris-content">
+                <span>Oi, eu sou a <span class="iris">IRIS</span>, a assistente virtual da Ingresso Rápido.</span>
+
+                <img src="assets/img/iris.png" class="avatar" alt="">
+                <!-- <img src="assets/img/iris_bg.jpg" alt=""> -->
+            </div>
+        </div>
+
+        <button id="chatButton" onclick="openChat()">
+            <svg id="Capa_1" enable-background="new 0 0 512.012 512.012" height="32" viewBox="0 0 512.012 512.012"
+                width="32" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                    <path
+                        d="m333.201 115.038c-28.905-59.021-89.37-98.042-157.193-98.042-97.047 0-176 78.505-176 175 0 26.224 5.63 51.359 16.742 74.794l-16.451 82.265c-2.094 10.472 7.144 19.728 17.618 17.656l83.279-16.465c11.213 5.319 22.813 9.364 34.732 12.151-26.717-126.541 69.199-245.321 197.273-247.359z" />
+                    <path
+                        d="m495.266 394.79c2.874-6.061 5.373-12.237 7.511-18.514h-.549c37.448-109.917-41.305-225.441-157.567-231.066-.002-.006-.003-.012-.005-.018-100.036-4.61-183.148 75.486-183.148 174.804 0 96.414 78.361 174.857 174.743 174.997 26.143-.035 51.201-5.663 74.568-16.747 91.207 18.032 84.094 16.75 86.189 16.75 9.479 0 16.56-8.686 14.709-17.941z" />
+                </g>
+            </svg>
+
+            Quero falar com a iris
+        </button>
+
+
+        <dialog class="container frame" id="chat">
+            <div class="button-container">
+                <button id="closeChat"><span>&times;</span></button>
+            </div>
+            <iframe src="https://chat-ingressorapido.digitalk.com.br/" frameborder="0"></iframe>
+        </dialog>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo-container">
+                    <a href="https://www.ingressorapido.com.br/">
+                        <img src="assets/img/logo-white.svg" alt="ingresso rápido">
+                    </a>
+                </div>
+
+                <div class="group-list">
+                    INSTITUCIONAL
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.ingressorapido.com.br/about">Sobre a Ingresso Rápido</a></li>
+                        <li><a href="https://sac.ingressorapido.com.br/">Fale Conosco</a></li>
+                        <li><a href="https://site.ingressorapido.com.br/newsletter/">Assine Nossa News</a></li>
+                        <li><a href="https://careers.ingressorapido.com.br/">Carreiras</a></li>
+                        <li><a href="https://www.ingressorapido.com.br/sales-point">Pontos de Venda</a></li>
+                    </ul>
+                </div>
+
+                <div class="group-list">
+                    POLÍTICAS
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.ingressorapido.com.br/policies">Políticas de Vendas</a></li>
+                        <li><a href="https://www.ingressorapido.com.br/privacy">Políticas de Privacidade</a>
+                        </li>
+                        <li><a href="https://site.ingressorapido.com.br/meiaentrada/">Políticas de Meia Entrada</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="group-list">
+                    CLIENTES
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://www.ingressorapido.com.br/commercial">Seja Nosso Parceiro</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="app_market-container group-list">
+                    COMPRE PELO APP
+                    <ul class="list-unstyled horizontal_list app_market">
+                        <li>
+                            <a
+                                href="https://itunes.apple.com/br/app/ingresso-rapido/id1000809331?l=pt&referrer=utm_source%3Dingressorapido%26utm_medium%3DBanner%2520Web%26utm_campaign%3DiOS%2520Footer%2520Web">
+                                <img src="assets/img/appstore.png" alt="apple store" />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://play.google.com/store/apps/details?id=com.ir.ticket&referrer=utm_source%3Dingressorapido%26utm_medium%3DBanner%2520Web%26utm_campaign%3DAndroid%2520Footer%2520Web">
+                                <img src="assets/img/googleplay.png" alt="google play" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="white" />
+            <div class="legal-content">
+                <div class="corp">
+                    © 2019 Ingresso Rápido. Todos os direitos reservados.
+                    <ul class="list-unstyled horizontal_list social_list">
+                        <li>
+                            <a href="https://www.facebook.com/IngressoRapido/">
+                                <img src="assets/img/icon-facebook.svg" alt="facebook" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/ingressorapido">
+                                <img src="assets/img/icon-twitter.svg" alt="twitter" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/ingressorapidooficial/">
+                                <img src="assets/img/icon-instagram.svg" alt="instagram" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/1374083/">
+                                <img src="assets/img/icon-linkedin.svg" alt="linkedin" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    Empresa Brasileira de Comercialização de Ingressos – Alameda Tocantins, 350 - 1° andar conj. 101
+                    Alphaville, Barueri - São Paulo, CEP: 06455-020 – CNPJ 15.150.423/0001-65
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/index.js">
+    </script>
+</body>
+
+</html>

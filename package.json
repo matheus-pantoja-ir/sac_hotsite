@@ -1,0 +1,19 @@
+{
+  "name": "hotsite_template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "prebuild": "npm run test",
+    "build": "parcel build index.html --public-url /alteracao-cancelamentos --out-dir build/alteracao-cancelamentos",
+    "test": "pa11y-ci ./index.html"
+  },
+  "keywords": [],
+  "author": "Matheus Pantoja",
+  "license": "ISC",
+  "devDependencies": {
+    "pa11y-ci": "^2.3.0",
+    "parcel-bundler": "^1.12.4"
+  }
+}
