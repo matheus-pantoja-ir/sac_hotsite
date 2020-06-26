@@ -6,7 +6,7 @@
   "scripts": {
     "start": "parcel index.html",
     "prebuild": "npm run test",
-    "build": "parcel build index.html --public-url /alteracao-cancelamentos --out-dir build/alteracao-cancelamentos",
+    "build": "parcel build index.html --public-url /sac --out-dir build/sac",
     "test": "pa11y-ci ./index.html"
   },
   "keywords": [],
