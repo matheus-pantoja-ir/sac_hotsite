@@ -259,7 +259,10 @@ a#emailLink {
     padding: 8px;
     border: none;
     border-radius: 16px;
-    color: #674390;
+}
+
+a#emailLink:hover{
+    color: #2b7ac1;
 }
 
 a#emailLink svg {
@@ -290,6 +293,10 @@ button#chatButton svg {
 @media (min-width: 576px) {
     .container {
         max-width: 540px;
+    }
+
+    a#emailLink {
+        color: #674390;
     }
 }
 
@@ -382,6 +389,7 @@ button#chatButton svg {
         margin-bottom: 16px;
         width: 300px;
         align-self: center;
+        color: #FFFFFF;
     }
     button#chatButton {
         margin-bottom: 16px;
