@@ -7,18 +7,20 @@ Para iniciar o desenvolvimento, basta seguir os seguintes codigos:
 $ npm install
 $ npm start
 ```
-> live server http://localhost:1234
+> Live server http://localhost:1234
 
 ## Publicação
 para minificar e publicar:
 ``` shell
 $ npm run build
 ``` 
-> sera gerada um pasta `dist` onde estarão todos os arquivos minificados.
-> sempre fazer um teste prelimidar no site da [ASES](http://asesweb.governoeletronico.gov.br/ases/)
+> Sera gerada um pasta `build` onde estarão todos os arquivos minificados.
+> Caso queira trocar o path `/path` basta trocar no package.json a o valor na flag `--public-url`, não esquece de iniciar com `/` e tambem trocar o valor depois depois da barra em `--out-dir build/path`
+
 ## Teste
 para rodar o teste de acessibilidade:
 ``` shell
 $ npm run test
 ```
-> sempre fazer um teste prelimidar no site da [ASES](http://asesweb.governoeletronico.gov.br/ases/)
+> Sempre fazer um teste prelimidar no site da [ASES](http://asesweb.governoeletronico.gov.br/ases/)
+ 
