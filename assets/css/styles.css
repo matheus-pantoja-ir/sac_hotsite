@@ -15,6 +15,10 @@
     background: #555;
 }
 
+html, body {
+    background: #232222;
+}
+
 html, body, main {
     border: 0;
     margin: 0;
@@ -212,6 +216,34 @@ main {
     margin: 8px;
 }
 
+.iris-content p {
+    position: relative;
+    margin-top: 16px;
+    text-align: center;
+    font-size: 18px;
+    padding: 16px 8px;
+    border-radius: 8px;
+    background-color: #5e468e36;
+}
+
+.iris-content p::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    right: 25%;
+    border-top: 30px solid #5e468e36;
+    border-left: 0px solid transparent;
+    border-right: 30px solid transparent;
+}
+
+.iris-content p strong {
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 8px;
+    color: #5e468e;
+}
+
 .iris-content span {
     margin-bottom: 16px;
     font-size: 18px;
@@ -246,10 +278,35 @@ main {
     font-weight: bold;
 }
 
-button#chatButton {
+a#emailLink {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 18px;
+    padding: 8px;
+    border: none;
+    border-radius: 16px;
+    margin-top: 16px;
+}
+
+a#emailLink:hover {
+    color: #2b7ac1;
+}
+
+a#emailLink svg {
+    margin-right: 8px;
+    fill: #217ac1;
+    padding-right: 8px;
+    border-right: 2px solid #217ac1;
+}
+
+button#chatButton {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 0;
     font-size: 18px;
     padding: 8px;
     border: none;
@@ -266,6 +323,9 @@ button#chatButton svg {
 @media (min-width: 576px) {
     .container {
         max-width: 540px;
+    }
+    a#emailLink {
+        color: #674390;
     }
 }
 
@@ -311,7 +371,7 @@ button#chatButton svg {
         top: 98px;
     }
     main {
-        height: calc(100vh - 535px);
+        height: 100%;
         background: url('../img/iris_bg.jpg');
         background-position: 70% center;
         background-repeat: no-repeat;
@@ -330,8 +390,34 @@ button#chatButton svg {
         width: 400px;
         color: #ffffff;
     }
+    .iris-content p {
+        width: 400px;
+        color: #ffffff;
+        border: 1px solid #69408e;
+        border-radius: 8px;
+        background-color: #2f82bc2b;
+        color: #FFFFFF;
+    }
+    .iris-content p::after {
+        border: none;
+    }
+    .iris-content small {
+        text-align: center;
+        width: 400px;
+        color: #ffffff;
+    }
+    .iris-content p strong {
+        width: 400px;
+        color: #ffffff;
+    }
     .iris-content span.iris {
         color: #5e468e;
+    }
+    a#emailLink {
+        margin-bottom: 16px;
+        width: 300px;
+        align-self: center;
+        color: #FFFFFF;
     }
     button#chatButton {
         margin-bottom: 16px;
