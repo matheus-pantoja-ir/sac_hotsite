@@ -216,6 +216,34 @@ main {
     margin: 8px;
 }
 
+.iris-content p {
+    position: relative;
+    margin-top: 16px;
+    text-align: center;
+    font-size: 18px;
+    padding: 16px 8px;
+    border-radius: 8px;
+    background-color: #5e468e36;
+}
+
+.iris-content p::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    right: 25%;
+    border-top: 30px solid #5e468e36;
+    border-left: 0px solid transparent;
+    border-right: 30px solid transparent;
+}
+
+.iris-content p strong {
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 8px;
+    color: #5e468e;
+}
+
 .iris-content span {
     margin-bottom: 16px;
     font-size: 18px;
@@ -259,9 +287,10 @@ a#emailLink {
     padding: 8px;
     border: none;
     border-radius: 16px;
+    margin-top: 16px;
 }
 
-a#emailLink:hover{
+a#emailLink:hover {
     color: #2b7ac1;
 }
 
@@ -277,6 +306,7 @@ button#chatButton {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 16px 0;
     font-size: 18px;
     padding: 8px;
     border: none;
@@ -294,7 +324,6 @@ button#chatButton svg {
     .container {
         max-width: 540px;
     }
-
     a#emailLink {
         color: #674390;
     }
@@ -362,11 +391,15 @@ button#chatButton svg {
         color: #ffffff;
     }
     .iris-content p {
-        margin-top: 16px;
-        text-align: center;
-        font-size: 18px;
         width: 400px;
         color: #ffffff;
+        border: 1px solid #69408e;
+        border-radius: 8px;
+        background-color: #2f82bc2b;
+        color: #FFFFFF;
+    }
+    .iris-content p::after {
+        border: none;
     }
     .iris-content small {
         text-align: center;
@@ -374,11 +407,6 @@ button#chatButton svg {
         color: #ffffff;
     }
     .iris-content p strong {
-        display: block;
-        margin-top: 16px;
-        text-align: center;
-        font-size: 22px;
-        margin-bottom: 8px;
         width: 400px;
         color: #ffffff;
     }
